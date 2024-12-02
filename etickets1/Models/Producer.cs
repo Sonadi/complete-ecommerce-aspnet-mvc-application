@@ -2,13 +2,12 @@
 
 namespace etickets1.Models
 {
-    public class Actor
+    public class Producer
     {
         [Key]
-        public int ActorId { get; set; }
+        public int ProducerId { get; set; }
         public String ProfilePictureURL { get; set; }
         public String FullName { get; set; }
         public String Bio { get; set; }
-
     }
 }
