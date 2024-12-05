@@ -27,6 +27,9 @@ app.UseRouting(); // Required for setting up routing
 app.UseAuthentication(); // Optional, if authentication is configured
 app.UseAuthorization();  // Optional, if authorization is required
 
+//Seed database
+AppDbInitializer.Seed(app);
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
