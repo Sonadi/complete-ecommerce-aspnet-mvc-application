@@ -13,12 +13,12 @@ namespace etickets1.Data
         {
             modelBuilder.Entity<Actor_Movie>().HasKey(am => new
             {
-                am.ActorrId,
-                am.MovieeId
+                am.ActorId,
+                am.MovieId
             });
 
-            modelBuilder.Entity<Actor_Movie>().HasOne(m=>m.Movie).WithMany(am=>am.Actor_Movies).HasForeignKey(am=>am.MovieeId);
-            modelBuilder.Entity<Actor_Movie>().HasOne(m => m.Actor).WithMany(am => am.Actor_Movies).HasForeignKey(am => am.ActorrId);
+            modelBuilder.Entity<Actor_Movie>().HasOne(m=>m.Movie).WithMany(am=>am.Actor_Movies).HasForeignKey(am=>am.MovieId);
+            modelBuilder.Entity<Actor_Movie>().HasOne(m => m.Actor).WithMany(am => am.Actor_Movies).HasForeignKey(am => am.ActorId);
 
             base.OnModelCreating(modelBuilder);
         }
