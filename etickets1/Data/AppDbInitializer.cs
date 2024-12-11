@@ -51,7 +51,7 @@ namespace etickets1.Data
                         new Actor() {
                           FullName = "Actor 2",
                           Bio = "This is the bio for the second actor",
-                          ProfilePictureURL = "https://www.pouted.com/wp-content/uploads/2015/04/ian-somerhalder-hd-wallpapers-1.jpg?x71148"
+                          ProfilePictureURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8079TdjanFgxSaXvDXWtW-SyAmztVNWnPQ&s"
                         },
                         new Actor() {
                           FullName = "Actor 3",

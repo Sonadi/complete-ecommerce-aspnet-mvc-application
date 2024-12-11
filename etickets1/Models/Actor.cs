@@ -6,8 +6,11 @@ namespace etickets1.Models
     {
         [Key]
         public int Id { get; set; }
+        [Display(Name ="Profile Picture URL")]
         public String ProfilePictureURL { get; set; }
+        [Display(Name ="Full Name")]
         public String FullName { get; set; }
+        [Display(Name ="Biography")]
         public String Bio { get; set; }
         public List<Actor_Movie> Actor_Movies { get; set; }
 
