@@ -51,7 +51,7 @@ namespace etickets1.Data
                         new Actor() {
                           FullName = "Actor 2",
                           Bio = "This is the bio for the second actor",
-                          ProfilePictureURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8079TdjanFgxSaXvDXWtW-SyAmztVNWnPQ&s"
+                          ProfilePictureURL = "http://i.huffpost.com/gen/920563/thumbs/o-BEST-ACTOR-GOLDEN-GLOBES-facebook.jpg"
                         },
                         new Actor() {
                           FullName = "Actor 3",

@@ -14,8 +14,8 @@ namespace etickets1.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var allProducers = await _context.Producers.ToListAsync();
-            return View();
+            var allMovies = await _context.Movies.ToListAsync();
+            return View(allMovies);
         }
     }
 }

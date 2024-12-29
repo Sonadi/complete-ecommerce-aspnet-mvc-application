@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Actor>
+﻿@model IEnumerable<Cinema>
 
 @{
-    ViewData["Title"] = "List Of Actors";
+    ViewData["Title"] = "List Of Cinemas";
 }
 
 <div class="row justify-content-center">
@@ -9,9 +9,9 @@
         <table class="table table-bordered text-center">
             <thead class="thead-light">
                 <tr>
-                    <th>@Html.DisplayNameFor(model => model.ProfilePictureURL)</th>
-                    <th>@Html.DisplayNameFor(model => model.FullName)</th>
-                    <th>@Html.DisplayNameFor(model => model.Bio)</th>
+                    <th>@Html.DisplayNameFor(model => model.Logo)</th>
+                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -20,13 +20,13 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img class="rounded-circle img-fluid" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 150px; height: auto;" />
+                            <img class="rounded-circle img-fluid" src="@item.Logo" alt="@item.Name" style="max-width: 150px; height: auto;" />
                         </td>
                         <td class="align-middle">
-                            @Html.DisplayFor(modelitem => item.FullName)
+                            @Html.DisplayFor(modelitem => item.Name)
                         </td>
                         <td class="align-middle">
-                            @Html.DisplayFor(modelitem => item.Bio)
+                            @Html.DisplayFor(modelitem => item.Description)
                         </td>
                         <td class="align-middle">
                             <a class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i> Edit</a> |
@@ -39,3 +39,5 @@
         </table>
     </div>
 </div>
+
+
